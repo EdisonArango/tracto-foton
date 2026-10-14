@@ -22,35 +22,36 @@
   "linea": "Auman EST",
   "potencia": "490 HP",
   "modelo": "2024",
-  "precio": "Consultar",
-  "precioNota": "Precio negociable. Escríbenos para recibir la oferta.",
-  "ubicacion": "Ciudad, Departamento",
-  "descripcion": "Tractocamión Foton Auman EST de 490 HP, modelo 2024, en excelente estado y listo para trabajar. Cabina amplia, configuración de doble eje de tracción y presentación impecable.",
-  "whatsapp": "570000000000",
-  "mensajeWhatsapp": "Hola, estoy interesado en el Tractocamión Foton Auman EST 490 HP modelo 2024. ¿Me das más información?",
-  "telefono": "+57 300 000 0000",
+  "precio": "$525.000.000",
+  "precioNota": "Precio sin tanque: $475.000.000",
+  "ubicacion": "Villavicencio, Meta",
+  "descripcion": "Tractocamión Foton Auman EST de 490 HP Mecánica, modelo 2024, en excelente estado y listo para trabajar. Cabina amplia con cama, en perfecto estado.",
+  "whatsapp": "573212082301",
+  "mensajeWhatsapp": "Hola, estoy interesado en el Tractocamión Foton Auman EST 490 HP modelo 2024...",
+  "telefono": "+573212082301",
   "especificaciones": [
     { "etiqueta": "Marca", "valor": "Foton" },
     { "etiqueta": "Línea", "valor": "Auman EST" },
     { "etiqueta": "Modelo", "valor": "2024" },
     { "etiqueta": "Potencia", "valor": "490 HP" },
     { "etiqueta": "Configuración", "valor": "6x4" },
-    { "etiqueta": "Kilometraje", "valor": "Consultar" },
-    { "etiqueta": "Transmisión", "valor": "Consultar" },
-    { "etiqueta": "Semirremolque cisterna", "valor": "Consultar" }
+    { "etiqueta": "Kilometraje", "valor": "165 mil" },
+    { "etiqueta": "Peso Máximo Bruto", "valor": "52.000 KG" },
+    { "etiqueta": "Motor", "valor": "CUMMINS ISGE E5-490 EURO 5 SCR" },
+    { "etiqueta": "Transmisión", "valor": "ZF Mecánica con retardador" },
+    { "etiqueta": "Velocidades", "valor": "16" }
   ],
   "destacados": [
     "Motor de 490 HP para carga pesada",
-    "Doble eje de tracción",
-    "Cabina con techo alto y baliza",
-    "Tanque de combustible en acero inoxidable"
+    "Activa en Regalías",
+    "Solo ha sido conducida por su dueño"
   ],
   "fotoPortada": "png_34",
   "fotoCierre": "lateral",
   "vistas": [
+    { "id": "png_34_izq", "titulo": "Costado derecho" },
     { "id": "png_frontal", "titulo": "Frontal" },
     { "id": "png_34", "titulo": "Tres cuartos" },
-    { "id": "png_34_izq", "titulo": "Costado derecho" },
     { "id": "png_lateral", "titulo": "Lateral" },
     { "id": "png_trasera", "titulo": "Trasera" }
   ],
@@ -311,7 +312,7 @@ footer{padding:1.8rem 0 calc(1.8rem + 4.5rem);color:var(--ink-soft);font-size:.9
     <div class="vistas__bg" aria-hidden="true"><div class="vistas__word d" id="vistasWord"></div></div>
     <div class="wrap vistas__inner">
       <div class="vistas__head">
-        <h2 class="h2 d" id="t-vistas">Gíralo y míralo bien</h2>
+        <h2 class="h2 d" id="t-vistas">Tú Próximo Vehículo Listo para Trabajar!</h2>
         <div class="vistas__tabs" id="vTabs" role="tablist" aria-label="Vistas del vehículo"></div>
       </div>
       <div class="vistas__stage">
@@ -323,7 +324,7 @@ footer{padding:1.8rem 0 calc(1.8rem + 4.5rem);color:var(--ink-soft);font-size:.9
 
   <section class="block" id="fotos" aria-labelledby="t-fotos">
     <div class="wrap">
-      <h2 class="h2 d" id="t-fotos">Fotos reales</h2>
+      <h2 class="h2 d" id="t-fotos">Galería!</h2>
       <p class="lead" style="margin:-.6rem 0 1.6rem">Así está hoy, tal cual. Toca una foto para verla en grande.</p>
       <div class="gallery">
         <div style="position:relative">
@@ -362,7 +363,7 @@ footer{padding:1.8rem 0 calc(1.8rem + 4.5rem);color:var(--ink-soft);font-size:.9
   <section class="final" aria-labelledby="t-final">
     <img class="final__bg" id="finalImg" alt="">
     <div class="wrap">
-      <h2 class="d" id="t-final">Que no te lo ganen</h2>
+      <h2 class="d" id="t-final">Que no te lo ganen!</h2>
       <p id="finalTxt"></p>
       <div class="row">
         <a class="btn btn--wa" data-wa target="_blank" rel="noopener">Escribir por WhatsApp</a>
@@ -424,7 +425,7 @@ const IMAGENES = {"diag_izq": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAA
   $('precio').textContent = D.precio;
   $('precioNota').textContent = D.precioNota;
   $('ubic').textContent = D.ubicacion;
-  $('finalTxt').textContent = `${nombre}, modelo ${D.modelo}. Escríbenos y te enviamos toda la información y más fotos.`;
+  $('finalTxt').textContent = `${nombre}, modelo ${D.modelo}. Escríbenos para coordinar una visita, solo personas serias!`;
   $('foot').textContent = `${nombre} · Modelo ${D.modelo} · ${D.ubicacion}`;
 
   // vistas
