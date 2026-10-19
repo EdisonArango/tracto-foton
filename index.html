@@ -32,7 +32,7 @@
   "potencia": "490 HP",
   "modelo": "2024",
   "precio": "$525.000.000",
-  "precioNota": "Precio sin tanque: $475.000.000",
+  "precioNota": "Negociable para pago de contado. Precio sin tanque: $475.000.000",
   "ubicacion": "Villavicencio, Meta",
   "descripcion": "Tractocamión Foton Auman EST de 490 HP Mecánica, modelo 2024, en excelente estado y listo para trabajar. Cabina amplia con cama, en perfecto estado.",
   "whatsapp": "573212082301",
@@ -422,7 +422,7 @@ const IMAGENES = {"diag_izq": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAA
   $('estado').textContent = D.estado;
   $('heroSub').textContent = `${D.tipo} ${D.marca} ${D.linea} ${D.potencia}`;
   const meta = [['Modelo',D.modelo],['Potencia',D.potencia],['Precio',D.precio]];
-  $('heroMeta').innerHTML = meta.map(([k,v])=>`<div><dt>${k}</dt><dd>${v}</dd></div>`).join('');
+  $('heroMeta').innerHTML = meta.map(([k,v])=>`<div><dt>${k}</dt><dd>${v}${k === 'Precio' ? '<div style="font-size: 20px;">Negociable para pago de contado</div>' : ''}</dd></div>`).join('');
 
   // strip
   const strip = [['Marca',D.marca],['Línea',D.linea],['Modelo',D.modelo],['Potencia',D.potencia]];
